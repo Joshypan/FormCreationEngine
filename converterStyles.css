@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #2c3531, #116466 400px, #181e1b);
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.insertBox {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#dropArea {
+    border: 2px dashed bisque;
+    padding: 50px;
+    cursor: pointer;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.fileLabel {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fileInput {
+    display: none;
+}
+
+.submitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: bisque;
+}
+
+a:hover {
+    background-color: black;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>FCE - HELP</title>
+    <link rel="stylesheet" href="helpStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Help Page</h1>
+        <div id="searchResults">
+            <div class="result">
+                <h3 onclick="toggleContent(this)">Login Help</h3>
+                <p>To login, simply put your username and password into the boxes and click login. If you encounter any issues with the login process, please ensure that your username is correct and your password meets the required criteria.</p>
+            </div>
+
+            <div class="result">
+                <h3 onclick="toggleContent(this)">File Upload</h3>
+                <p>To upload a file, select a .txt or .csv file with the appropriate format. The file should contain survey questions with specified formats. After uploading, you can take your survey and view the results. If you face any issues with file upload, ensure the file format is correct.</p>
+                The appropriate format is mentioned below: <br>
+                <div class="example">
+                    Question Number,Question Type,Question Name,Question Parameters <br>
+                    1,MC,What is your favorite class?,Math`Science`Gym`History<br>
+                    2,ER,Explain photosynthesis,N/A<br>
+                    3,CB,Do you workout?,Yes`No<br>
+                    4,D,When were you born?,N/A<br>
+                    5,T,At what time do you wake up?,N/A<br>
+                </div>
+                Note: " ` " is used to separate multiple values
+            </div>
+
+            <div class="result">
+                <h3 onclick="toggleContent(this)">Account Creation</h3>
+                <p>To create an account, enter a username and a password. For your security, make sure your password contains a mix of uppercase and lowercase letters, numbers, and special characters.</p>
+            </div>
+
+            <div class="result">
+                <h3 onclick="toggleContent(this)">Who Are The Creators?</h3>
+                <p>Connor Beaven, Ryan Oderkirk, and Joshua Panchana!</p>
+            </div>
+
+            <div class="result">
+                <h3 onclick="toggleContent(this)">What Is The Purpose?</h3>
+                <p>This web application allows you to either manually create a survey or upload a file to create the survey. This survey can be taken many times so you can get a wide variety of results. It is easy to use and fast! We look forward to meeting your survey needs.</p>
+            </div>
+        </div>
+
+        <script>
+            function toggleContent(element) {
+                element.parentElement.classList.toggle('active');
+            }
+        </script>
+    </div>
+</body>
+</html>
